@@ -12,22 +12,22 @@ public class Owner {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "name", nullable = false, length = 255)
+    @Column(name = "name", nullable = false)
     private String name;
 
-    @Column(name = "lastname", nullable = false, length = 255)
+    @Column(name = "lastname", nullable = false)
     private String lastname;
 
-    @Column(name = "email", nullable = false, length = 255)
+    @Column(name = "email", nullable = false)
     private String email;
 
-    @Column(name = "password", nullable = false, length = 255)
+    @Column(name = "password", nullable = false)
     private String password;
 
     @Column(name = "role", nullable = false, length = 20)
     private String role;
 
-    @Column(name = "authorization", nullable = false, length = 255)
+    @Column(name = "authorization", nullable = false)
     private String authorization;
 
     // getters and setters

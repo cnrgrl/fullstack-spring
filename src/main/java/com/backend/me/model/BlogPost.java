@@ -1,9 +1,14 @@
 package com.backend.me.model;
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
+
 import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "blog_post")
+@Getter
+@Setter
 public class BlogPost {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
