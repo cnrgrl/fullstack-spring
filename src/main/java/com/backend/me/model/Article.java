@@ -1,11 +1,9 @@
 package com.backend.me.model;
-
 import jakarta.persistence.*;
-
 import java.time.LocalDateTime;
 
-// Example for Article.java
 @Entity
+@Table(name = "article")
 public class Article {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -1,9 +1,13 @@
 package com.backend.me.model;
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 
 @Entity
-@Table(name = "admin_user")
-public class Admin {
+@Table(name = "owner")
+@Getter
+@Setter
+public class Owner {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
