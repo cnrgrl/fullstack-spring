@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 
 import java.time.LocalDateTime;
 
-// Example for BlogPost.java
+// Example for Article.java
 @Entity
 public class Article {
     @Id
@@ -22,7 +22,8 @@ public class Article {
 
     private int likes;
 
-    private int comments;
+    @Column(columnDefinition = "TEXT")
+    private String comments;
 
     private boolean isVisible;
 
